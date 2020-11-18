@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# zNorm
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of `zNorm` is to provide the `znorm` function with some friends and let them use this function to do some data analysis.
+
+Use `zNorm` to:
+
+  - Normalize the data in numeric vector
+  - Testify whether there exists some non-numeric elements in a vector.
+
+## Installation
+
+You can install the released version of zNorm from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+devtools::install_github("zhaoshengEE/zNorm")
+```
+
+## Basic Usage
+
+This is a basic example which shows how to use the znorm function in this package:
+
+```{r example}
+library(zNorm)
+znorm(c(16, 9, 13, 5))
+```
+
