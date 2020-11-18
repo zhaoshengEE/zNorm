@@ -1,0 +1,28 @@
+---
+title: "znorm"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{znorm}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(zNorm)
+```
+
+
+This is how znorm works:
+
+```{r}
+znorm(c(16, 9, 13, 5))
+znorm(c(16, 9, 13, 5, 2, 17, 14),trim = 0.2)
+```
+
